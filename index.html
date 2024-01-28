@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turn based rpg</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+    
+    <div class="flexContainer">
+         <div class="titleHeader retroBorder retroBorderHeader retroFont">
+             <h1> Turn based rpg</h1>
+             <div class="bottomBorder"></div>
+         </div>
+
+         <div class="modelWrapper">
+             <!-- <div class="playerCharacter">
+            <h3>Player</h3>
+        </div> -->
+             <div id="bossSvg">
+                 <img src="bossEnemy.svg" alt="boss svg">
+             </div>
+
+
+
+         </div>
+
+         <div class="gridContainer retroBorder retroFont">
+             <div class="playerStatusWrapper">
+                 <div class="playerStatus footerStyling">
+                     <label for="hP">HP</label>
+                     <progress id="hP" class="hpBar" value="100" max="100"></progress>
+                     <label for="sP">SP</label>
+                     <progress id="sP" value="200" max="200"></progress>
+                     <label for="tP">TP</label>
+                     <progress id="tP" value="0" max="100"></progress>
+                 </div>
+             </div>
+
+             <div class="skillsWrapper">
+                 <div class="skillsMenu footerStyling">
+                     <button id="attackBtn" name="Attack">
+                         <p class="skillName">Attack</p>
+                     </button>
+                     <button id="ultBtn" name="Ult">
+                         <p class="skillName">Ult</p>
+                     </button>
+                     <button id="buffBtn" name="Buff">
+                         <p class="skillName">Buff</p>
+                     </button>
+                     <button id="healBtn" name="Heal">
+                         <p class="skillName">Heal</p>
+                     </button>
+                 </div>
+             </div>
+
+             <div class="bossStatusWrapper footerStyling">
+                 <div class="bossCharacter">
+                     <h3 id="bossName">Isshin the sword saint</h3>
+                 </div>
+
+                 <div class="bossStatus">
+                     <label for="bossHp">Boss HP</label>
+                     <progress id="bossHp" class="hpBar" value="1200" max="1200"></progress>
+                 </div>
+             </div>
+
+         </div>
+    </div>
+   
+   
+    
+    
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.retroFont{
+    color: white;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.flexContainer{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.flexContainer .gridContainer{
+    flex: 1 1 auto;
+}
+
+.titleHeader{
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.retroBorder{
+    background-color: #51519b;
+}
+
+.retroBorderHeader{
+    border-bottom: 5px solid #bcbebe;
+    border-radius: 0 0 10px 10px;
+}
+
+.modelWrapper{
+    text-align: center;
+    background-color: black;
+    color: #fff;
+}
+
+#bossName{
+    font-size: 1.5rem;
+}
+
+#bossSvg{
+    padding-top: 50px;
+}
+
+#bossSvg img{
+    height: 20rem;
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-top: 5px solid #bcbebe;
+    border-radius: 5px 0 0 0;
+}
+
+.skillsWrapper{
+    border-inline: 5px solid  #dcd6d6 ;
+    border-radius: 0 5px 0 5px;
+}
+
+.playerStatus{
+  display: flex;
+  flex-flow: column;
+    
+}
+
+.footerStyling{
+  padding: 2rem 2rem 0 2rem;
+  height: 100%;
+}
+
+.skillsMenu{
+    height: 100%;
+    text-align: center;
+}
+
+.skillsMenu button{
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+
+}
+
+.bossCharacter{
+    margin-bottom: 2rem;
+}
+
+progress{
+    width: 14rem;
+}
+
+.hpBar::-webkit-progress-value { background: red; transition: width 1s; }
+.hpBar::-moz-progress-bar { background: red; transition: width 1s; }
+.hpBar { color: red; transition: width 1s; }
+
+#tP::-webkit-progress-value { background: rgb(9, 255, 0); transition: width 1s; }
+#tP::-moz-progress-bar { background: rgb(9, 255, 0); transition: width 1s;}
+#tP { color: rgb(9, 255, 0); transition: width 1s; }
+
+#sP::-webkit-progress-value { background: rgb(76, 0, 255); transition: width 1s; }
+#sP::-moz-progress-bar { background: rgb(76, 0, 255);transition: width 1s; }
+#sP { color: rgb(76, 0, 255); transition: width 1s; }
+
+#bossHp{
+    width: 25rem;
+}
